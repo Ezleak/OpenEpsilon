@@ -22,14 +22,14 @@ import org.lwjgl.opengl.Display
 
 object EpsilonPlus {
 
-    const val MOD_NAME = "Epsilon+"
-    const val MOD_ID = "epsilon"
-    const val VERSION = "4.1u230128"
+    const val MOD_NAME = "LoserGod"
+    const val MOD_ID = "loser"
+    const val VERSION = "1.0-skid"
 
-    const val INFO = "$MOD_NAME Build $VERSION - Epsilon Plus"
+    const val INFO = "$MOD_NAME Build $VERSION - LoserGod.cc"
 
     const val DEFAULT_COMMAND_PREFIX = "."
-    const val DEFAULT_CONFIG_PATH = "EpsilonPlus/"
+    const val DEFAULT_CONFIG_PATH = "LoserGod.cc/"
 
     val mainThread: Thread = Thread.currentThread().also {
         it.priority = Thread.MAX_PRIORITY
@@ -39,7 +39,7 @@ object EpsilonPlus {
 
 
     fun preInit() {
-        Logger.info("Pre initializing EpsilonPlus")
+        Logger.info("Initializing LoserGod.cc")
         Display.setTitle("$MOD_NAME $VERSION")
         ModuleManager
         CommandManager
@@ -51,7 +51,7 @@ object EpsilonPlus {
     }
 
     fun postInit() {
-        Logger.info("Post initializing EpsilonPlus")
+        Logger.info("Initializing Loser Hack")
         ConfigManager.loadAll(true)
         RootGUI.disable(notification = false, silent = true)
         HUDEditor.disable(notification = false, silent = true)
