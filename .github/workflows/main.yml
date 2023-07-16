@@ -44,6 +44,6 @@ jobs:
 
         with:
 
-          name: Epsilon
+          name: EpsilonPlus
 
-          path: ./build/libs/epsilon-*.jar
+          path: ./build/libs/EpsilonPlus-*.jar
