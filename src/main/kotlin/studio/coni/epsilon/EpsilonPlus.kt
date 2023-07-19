@@ -22,9 +22,9 @@ import org.lwjgl.opengl.Display
 
 object EpsilonPlus {
 
-    const val MOD_NAME = "LoserGod"
-    const val MOD_ID = "loser"
-    const val VERSION = "1.0-skid"
+    const val MOD_NAME = "loser"
+    const val MOD_ID = "LoserGod.cc"
+    const val VERSION = "1.0"
 
     const val INFO = "$MOD_NAME Build $VERSION - LoserGod.cc"
 
@@ -51,7 +51,7 @@ object EpsilonPlus {
     }
 
     fun postInit() {
-        Logger.info("Initializing Loser Hack")
+        Logger.info("Initializing LoserGod.cc")
         ConfigManager.loadAll(true)
         RootGUI.disable(notification = false, silent = true)
         HUDEditor.disable(notification = false, silent = true)
